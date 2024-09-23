@@ -1,0 +1,14 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+        font-family: "Poppins", system-ui;
+        font-weight: 400;
+        font-style: normal;
+      /* width: 100%; */
+}
+.olive{
+  color: #B4F461;
+}
