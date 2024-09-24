@@ -38,7 +38,16 @@
             const finalBalance = totalBalanceNumber - addMoneyNumber;
         
             document.getElementById(totalBalanceId).innerText = `${finalBalance} BDT`;
+             
+            if(finalBalance > 0){
+                document.getElementById('my_modal_6').checked = true;
+            }else{
+                alert("successfully not donate your money")
+            }
+            
         }
+     
+        
         
         document.getElementById('submitbtn').addEventListener('click', function(event) {
             event.preventDefault();
@@ -54,36 +63,19 @@
             event.preventDefault();
             updateBalance('addmoney3', 'balance3', 'totalbalance');
         });
+   document.getElementById('donate-btn').addEventListener('click',function(){
+    document.getElementById('donate-btn').style.backgroundColor = "#C6EBC9"
+    document.getElementById('history-btn').style.backgroundColor = 'transparent'
+   })
+   document.getElementById('history-btn').addEventListener('click',function(){
+    document.getElementById('history-btn').style.backgroundColor = "#C6EBC9"
+    document.getElementById('donate-btn').style.backgroundColor = 'transparent'
+   })
 
-        // document.getElementById('submitbtn').addEventListener('click', function(event) {
-        //     event.preventDefault();  
-        
-        //     const Addmoney = document.getElementById('addmoney').value;
-        //     const AddmoneyNumber = parseFloat(Addmoney);
-        
-            
-        //     if (isNaN(AddmoneyNumber) || AddmoneyNumber < 0) {
-        //         alert("Please enter a positive number");
-        //         return;  
-        //     }
-        
-        //     const currentBalance = document.getElementById('balance').innerText;
-        //     const balanceNumber = parseFloat(currentBalance);
-        //     const updateBalance = AddmoneyNumber + balanceNumber;
+  
     
-        //     console.log(updateBalance);
-    
-        //  document.getElementById('balance').innerText = `${updateBalance} BDT`;
-    
-        //  const TotalBalance = document.getElementById('totalbalance').innerText;
-        //  console.log("gukhaaa hoise")
-        //  const floatbalance = parseFloat(TotalBalance);
-        //  const finalbalance = floatbalance - AddmoneyNumber;
-        //  console.log(finalbalance);
-        //  document.getElementById('totalbalance').innerText = `${finalbalance}`;
-        // });
-    
-   
+
+
     
     
 
