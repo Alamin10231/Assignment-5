@@ -53,7 +53,8 @@
        
         document.getElementById('submitbtn').addEventListener('click', function(event) {
             event.preventDefault();          
-            updateBalance('addmoney', 'balance', 'totalbalance');            
+            updateBalance('addmoney', 'balance', 'totalbalance'); 
+  
         });
         
         document.getElementById('submitbtn2').addEventListener('click', function(event) {
@@ -64,9 +65,7 @@
         document.getElementById('submitbtn3').addEventListener('click', function(event) {
             event.preventDefault();
             updateBalance('addmoney3', 'balance3', 'totalbalance');
-        });
-      
-
+        });      
    document.getElementById('donate-btn').addEventListener('click',function(){
     document.getElementById('donate-btn').style.backgroundColor = "#C6EBC9"
     document.getElementById('history-btn').style.backgroundColor = 'transparent'
