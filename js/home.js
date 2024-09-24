@@ -1,6 +1,12 @@
-console.log("checkkkkk")
+// document.getElementById('submit').addEventListener('click',function(){
+//     const p = document.createElement('p');
+//   p.innerText = `Added : ${donationAmount} Tk. New balance:${donationTitle} Date:${date}`;
 
-const magicbtn = document.getElementById('submitbtn').value;
+//  // Append the paragraph to the notification div
+//  document.getElementById('notification').appendChild(p);
 
-const title = document.getElementById('title').innerText;
-console.log(magicbtn + title);
+// //  // Log the paragraph to the console
+//   console.log(p);
+// })
+
+

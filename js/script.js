@@ -30,6 +30,8 @@
             const currentBalance = document.getElementById(balanceId).innerText;
             const balanceNumber = parseFloat(currentBalance);
             const updatedBalance = addMoneyNumber + balanceNumber;
+            document.getElementById('my_modal_6').checked = true;
+
         
             document.getElementById(balanceId).innerText = `${updatedBalance} BDT`;
         
@@ -40,18 +42,18 @@
             document.getElementById(totalBalanceId).innerText = `${finalBalance} BDT`;
              
             if(finalBalance > 0){
-                document.getElementById('my_modal_6').checked = true;
+           
+                
+               
             }else{
                 alert("successfully not donate your money")
             }
             
         }
-     
-        
-        
+       
         document.getElementById('submitbtn').addEventListener('click', function(event) {
-            event.preventDefault();
-            updateBalance('addmoney', 'balance', 'totalbalance');
+            event.preventDefault();          
+            updateBalance('addmoney', 'balance', 'totalbalance');            
         });
         
         document.getElementById('submitbtn2').addEventListener('click', function(event) {
@@ -63,6 +65,8 @@
             event.preventDefault();
             updateBalance('addmoney3', 'balance3', 'totalbalance');
         });
+      
+
    document.getElementById('donate-btn').addEventListener('click',function(){
     document.getElementById('donate-btn').style.backgroundColor = "#C6EBC9"
     document.getElementById('history-btn').style.backgroundColor = 'transparent'
@@ -71,8 +75,27 @@
     document.getElementById('history-btn').style.backgroundColor = "#C6EBC9"
     document.getElementById('donate-btn').style.backgroundColor = 'transparent'
    })
+   function student(){
+    document.getElementById('submitbtn').addEventListener('click', function() {
+        const donationAmount = document.getElementById('addmoney').value;
+       
+        const donationTitle = document.getElementById('Donation-title').innerText;
+       
+        const date = new Date().toLocaleDateString();
+        console.log(donationAmount, donationTitle, date);
+   
+   
+  })
+ }
+    student();
+   
+   document.getElementById('notification').appendChild(student())
 
-  
+
+
+
+
+
     
 
 
